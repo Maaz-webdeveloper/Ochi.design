@@ -1,0 +1,41 @@
+html,
+body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+/* Chrome, Safari aur Opera ke liye */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox, IE aur Edge ke liye */
+html,
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Locomotive Scroll / Lenis ke custom scrollbar track ke liye */
+.c-scrollbar,
+.lenis-scrollbar {
+  display: none !important;
+}
+
+@import "tailwindcss";
+@font-face{
+  font-family: "FoundersGrotesk";
+  src: url("/fonts/FoundersGrotesk-Semibold.woff") format("woff");
+  
+}
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("/fonts/NeueMontreal-Regular.woff2") format("woff2");
+}
+@theme {
+  --font-founders: "FoundersGrotesk";
+  --font-neue: "NeueMontreal";
+}
